@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'inter', monospace;
+
+}
+
+body{
+    color: #333333;
+}
+
+.allitems{
+    display: flex;
+    justify-content: space-between;
+    margin: 1%;
+    padding: 1%;
+    border: 1px solid #B1A592;
+    border-radius: 50px;
+    width: auto;
+    font-size: 24px;
+    font-weight: 400;
+
+}
+
+.rit{
+    display: flex;
+}
+
+.allitems a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.allitems button:hover{
+    background-color: #aca9a9;
+    transform: skewX(10px);
+    overflow: hidden;
+}
+
+.allitems ul{
+    list-style: none;
+    display: flex;
+}
+
+.allitems li{
+    padding:0 10% ;
+}
+
+button {
+    border: 1px solid #B1A592;
+    border-radius: 50px;
+    height: 100%;
+    padding: 5%;
+    background-color: transparent;
+}
+
+.row{
+    color: #333333;
+    width: 100%; 
+ }
+ 
+ .card1,.card2,.card3,.card4{
+    padding: 1%;
+    border-radius: 30px;
+    color: #333333;
+    transition:  transform 3s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ }
+
+ .card1:hover,.card2:hover,.card3:hover,.card4:hover{
+    .image{
+        height: 101%;
+        width: 101%;
+        overflow: hidden;
+    }
+ }
+
+ .btn1 p,.btn2 p,.btn3 p{
+    border: 1px solid #323025;
+    border-radius: 50px;
+    height: auto;
+    width: max-content;
+    padding: 2%;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+.get{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #333333;
+}
+
+.right{
+    text-align: center;
+}
+
+.arrow{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.lor{
+    font-weight: 300;
+    color: #333333;
+}
+
+.heading u{
+    color: #333333;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.text{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #333333;
+}
+
+/*CARD-1*/
+
+.card1{
+    background-color: #DFD6C5;
+}
+
+
+.card1 .image,.card2 .image, .card3 .image{
+    width: 100%;
+    border-radius: 30px;
+}
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #323025;
+}
+/*CARD-2*/
+.card2{
+    width: 100%;
+    background-color: #8E886D;
+}
+
+
+.btn2 p{
+    padding: 3%;
+}
+
+/*CARD-3*/
+.card3{
+    width: 100%;
+    background-color: #916E58;
+    box-sizing: border-box;
+}
+
+.card3 .heading{
+    font-weight: 700;
+}
+
+.card3 p{
+    font-weight: 400;
+}
+
+/*CARD-4*/
+
+.card4cont{
+    display: flex; 
+    justify-content: space-between;
+}
+
+.car4cont .image{
+    width: 100px;
+}
+
+.card4{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #B1A48E;
+}
+
+.btn3 p{
+    padding: 4%;
+}
+
+
+/*MEDIA QUERY*/
+@media only screen and (max-width: 500px) {
+   .logo{
+    width: 80%;
+   }
+   .contact{
+    width: 20%;
+    margin-right: 0;
+   }
+   .ele{
+    visibility: hidden;
+   }
+   .row {
+    flex-direction: column;
+    margin: 2rem 0;
+}
+.col-1,.col-3,.col-5,.col-6{
+    margin-top: 1%;
+    box-sizing: border-box;
+}
+.card2cont .leeft{
+    display: block;
+}
+  }
+  
+ /* MEDIUM DEVICES*/
+@media only screen and (min-width: 501px) and (max-width:850px){
+    .logo{
+        width: 80%;
+       }
+       .contact{
+        margin-right: 0;
+       }
+       .ele{
+        visibility: hidden;
+       }
+       .row{
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+    .col-1,.col-3,.col-5,.col-6{
+        margin-top: 2%;
+        box-sizing: border-box;
+    }
+    .col-5,.col-6{
+        margin: 2%;
+    }
+    .row2{
+        display: flex;
+        justify-content: space-between;
+    }
+    .card2cont .leeft{
+        flex-direction: column;
+    }
+      }
+
+/*LARGE DEVICES*/
+@media only screen and (min-width: 851px) {
+    .row{
+        display: flex;
+    }
+    .row2{
+        display: flex;
+    }
+    .col-1,.col-3,.col-5,.col-6{
+        margin: 1%;
+        box-sizing: border-box;
+    }
+    .card2cont{
+        display: flex;
+    }
+} 
